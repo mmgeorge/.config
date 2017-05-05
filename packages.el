@@ -70,7 +70,7 @@
   (add-hook 'markdown-mode-hook
             (lambda ()
               (local-set-key (kbd "C-l l") 'markdown-insert-link) 
-o              (local-set-key (kbd "C-l p") 'markdown-live-preview-mode)))
+              (local-set-key (kbd "C-l p") 'markdown-live-preview-mode)))
   
   
 

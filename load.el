@@ -1,9 +1,18 @@
 
-(load "./emacs-visual.el")
-(load "./emacs-remove-unwanted-buffers.el")
-(load "./emacs-half-page-scroll.el")
-(load "./emacs-commands.el")
-(load "./emacs-native-modes.el")
-(load "./emacs-root.el")
-(load "./xemacs-templates.el")
-(load "./emacs-packages.el")
+
+
+(defun load-config (path)
+  (setq loads
+        '("visual.el"
+          "remove-unwanted-buffers.el"
+          "half-page-scroll.el"
+          "commands.el"
+          "native-modes.el"
+          "root.el"
+          "templates.el"
+          "packages.el"))
+  (dolist (file loads)
+    (load-file (concat path file))))
+
+
+(load-config CONFIG-LOAD-PATH)
