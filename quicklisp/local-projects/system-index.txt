@@ -1,0 +1,6 @@
+cs325/cs325.asd
+wnsql/wnsql.asd
+cs325/sddr/sddr.asd
+cs325/lisp-unit/lisp-unit.asd
+simple-server/simple-server.asd
+simple-server/apps/json-demo/json-demo.asd
